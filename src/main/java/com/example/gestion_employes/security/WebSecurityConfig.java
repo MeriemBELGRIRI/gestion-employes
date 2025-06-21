@@ -39,7 +39,7 @@ public class WebSecurityConfig {
             )
             .formLogin(form -> form
                 .loginPage("/login")
-                .defaultSuccessUrl("/dashboard", true) // redirection après login
+                .defaultSuccessUrl("/employes", true) // redirection après login
                 .permitAll()
 )
             .logout(logout -> logout
